@@ -14,7 +14,12 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@labs/core": ["libs/core/src/index.ts"],
+      "@labs/domain-foo": ["libs/domain-foo/src/index.ts"],
+      "@labs/security": ["libs/security/src/index.ts"],
+      "@labs/ui": ["libs/ui/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
