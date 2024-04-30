@@ -17,6 +17,7 @@
     "paths": {
       "@labs/core": ["libs/core/src/index.ts"],
       "@labs/domain-foo": ["libs/domain-foo/src/index.ts"],
+      "@labs/foo-api": ["libs/foo-api/src/index.ts"],
       "@labs/security": ["libs/security/src/index.ts"],
       "@labs/ui": ["libs/ui/src/index.ts"]
     }

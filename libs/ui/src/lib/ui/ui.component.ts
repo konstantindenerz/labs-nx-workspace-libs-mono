@@ -1,6 +1,6 @@
-import { ChangeDetectionStrategy, Component } from '@angular/core';
+import { ChangeDetectionStrategy, Component, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import {fooUtils} from '@labs/core';
+import {fooUtils, UserService} from '@labs/core';
 
 @Component({
   selector: 'lib-ui',
@@ -12,4 +12,5 @@ import {fooUtils} from '@labs/core';
 })
 export class UiComponent {
   foo = fooUtils();
+  public readonly userService = inject(UserService);
 }
