@@ -1,5 +1,6 @@
 import { ChangeDetectionStrategy, Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import {fooUtils} from '@labs/core';
 
 @Component({
   selector: 'lib-ui',
@@ -9,4 +10,6 @@ import { CommonModule } from '@angular/common';
   styleUrl: './ui.component.scss',
   changeDetection: ChangeDetectionStrategy.OnPush,
 })
-export class UiComponent {}
+export class UiComponent {
+  foo = fooUtils();
+}
